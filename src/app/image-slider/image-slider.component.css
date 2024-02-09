@@ -1,0 +1,41 @@
+.slider-container {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+div {
+    transition: transform 0.5s ease-in-out;
+}
+
+img {
+    width: 100%;
+}
+
+.active {
+    transform: translateX(0);
+}
+
+
+main {
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
